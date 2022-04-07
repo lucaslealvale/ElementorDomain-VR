@@ -27,13 +27,13 @@ public class WaterController : MonoBehaviour {
         if (joint == null && botao.GetStateDown(trackedObj.inputSource)) {
             if (!water.isPlaying) {
                 water.Play();
-                Debug.Log("Start water");
+                // Debug.Log("Start water");
             }
         } else if (joint == null && botao.GetStateUp(trackedObj.inputSource)) {
             Debug.Log("Entrei no else");
             if(water.isPlaying) {
                 water.Stop();
-                Debug.Log("Stop water");
+                // Debug.Log("Stop water");
             }
         }
     }
